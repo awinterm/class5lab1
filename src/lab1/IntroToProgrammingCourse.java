@@ -3,7 +3,8 @@ package lab1;
 import javax.swing.JOptionPane;
 
 /**
- * Describe responsibilities here.
+ * This class is responsible for getting and setting its name and number.
+ * It inherits its get/set credits from the super class.
  *
  * @author      your name goes here
  * @version     1.00
