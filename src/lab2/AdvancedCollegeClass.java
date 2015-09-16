@@ -10,6 +10,8 @@ package lab2;
  * @author andre_000
  */
 public interface AdvancedCollegeClass extends CollegeClass {
+
     public abstract String getPrerequisites();
+
     public abstract void setPrerequisites(String prerequisites);
 }

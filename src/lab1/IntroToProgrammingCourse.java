@@ -3,13 +3,14 @@ package lab1;
 import javax.swing.JOptionPane;
 
 /**
- * This class is responsible for getting and setting its name and number.
- * It inherits its get/set credits from the super class.
+ * This class is responsible for getting and setting its name and number. It
+ * inherits its get/set credits from the super class.
  *
- * @author      Andrew Wintermyer
- * @version     1.00
+ * @author Andrew Wintermyer
+ * @version 1.00
  */
 public class IntroToProgrammingCourse extends CollegeClass {
+
     private String courseName;
     private String courseNumber;
 
@@ -23,7 +24,7 @@ public class IntroToProgrammingCourse extends CollegeClass {
     }
 
     public final void setCourseNumber(String courseNumber) {
-        if(courseNumber == null || courseNumber.length() == 0) {
+        if (courseNumber == null || courseNumber.length() == 0) {
             JOptionPane.showMessageDialog(null,
                     "Error: courseNumber cannot be null of empty string");
             System.exit(0);
@@ -36,7 +37,7 @@ public class IntroToProgrammingCourse extends CollegeClass {
     }
 
     public final void setCourseName(String courseName) {
-        if(courseName == null || courseName.length() == 0) {
+        if (courseName == null || courseName.length() == 0) {
             JOptionPane.showMessageDialog(null,
                     "Error: courseName cannot be null of empty string");
             System.exit(0);
@@ -44,5 +45,4 @@ public class IntroToProgrammingCourse extends CollegeClass {
         this.courseName = courseName;
     }
 
-    
 }

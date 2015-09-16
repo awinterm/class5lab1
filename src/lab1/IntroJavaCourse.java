@@ -1,13 +1,14 @@
 package lab1;
 
 /**
- * This class has its own name and number but inherits its credits and prerequisites from
- * abstract super classes.
+ * This class has its own name and number but inherits its credits and
+ * prerequisites from abstract super classes.
  *
- * @author      Andrew Wintermyer
- * @version     1.00
+ * @author Andrew Wintermyer
+ * @version 1.00
  */
 public class IntroJavaCourse extends AdvancedCollegeClass {
+
     private String courseName;
     private String courseNumber;
 
@@ -18,7 +19,6 @@ public class IntroJavaCourse extends AdvancedCollegeClass {
     public void setCourseName(String courseName) {
         this.courseName = courseName;
     }
-
 
     public IntroJavaCourse(String courseName, String courseNumber) {
         this.courseName = courseName;
@@ -33,7 +33,4 @@ public class IntroJavaCourse extends AdvancedCollegeClass {
         this.courseNumber = courseNumber;
     }
 
-
-
-    
 }
