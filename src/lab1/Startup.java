@@ -28,7 +28,10 @@ public class Startup {
         // Common methods or properties of a class. If you want to use things only in the subclass you 
         // cannot use this principle.  
         
-        
+        // As far as the differences between abstract class as a super vs interface. 
+        // Interfaces seem to lend it self to the 3 rules for quality code more so than abstract classes. 
+        // However it does depend on the system. Abstract classes inheritance can limit freedom 
+        // in the subclasses. This could be useful to limit how a subclass can be written.
         
         CollegeClass class1 = new AdvancedJavaCourse("Advanced Java", "00000003");
         CollegeClass class2 = new IntroToProgrammingCourse("Intro to Programming", "0000002");
