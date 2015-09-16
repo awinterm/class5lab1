@@ -5,22 +5,30 @@
  */
 package lab1;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author andre_000
  */
-public interface CollegeClass {
+public abstract class CollegeClass {
+    private double credits;
 
-    // The word abstract is not needed however is here to illustrate the point that these are abstract methods.
-    // These are the methods that all collegeClasses require.
-    // I have included get and set prerequisites classes that have none should set this var to "None"
-    
+    public double getCredits() {
+        return credits;
+    }
+
+    public void setCredits(double credits) {
+        if(credits < 0.5 || credits > 4.0) {
+            JOptionPane.showMessageDialog(null,
+                    "Error: credits must be in the range 0.5 to 4.0");
+            System.exit(0);
+        }
+        this.credits = credits;
+    }
+            
       public abstract String getCourseNumber();
       public abstract void setCourseNumber(String courseNumber);
-      public abstract double getCredits();
-      public abstract void setCredits(double credits);
-
       public abstract String getCourseName();
       public abstract void setCourseName(String courseName);
-
 }

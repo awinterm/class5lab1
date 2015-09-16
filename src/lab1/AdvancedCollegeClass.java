@@ -5,11 +5,25 @@
  */
 package lab1;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author andre_000
  */
-public interface AdvancedCollegeClass {
-    public abstract String getPrerequisites();
-    public abstract void setPrerequisites(String prerequisites);
+public abstract class AdvancedCollegeClass extends CollegeClass {
+    private String prerequisites;
+    
+        public void setPrerequisites(String prerequisites) {
+        if(prerequisites == null || prerequisites.length() == 0) {
+            JOptionPane.showMessageDialog(null,
+                    "Error: prerequisites cannot be null of empty string");
+            System.exit(0);
+        }
+        this.prerequisites = prerequisites;
+        }
+
+    public String getPrerequisites() {
+        return prerequisites;
+    }
 }

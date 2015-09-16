@@ -1,17 +1,20 @@
-package lab1;
+package lab2;
 
 import javax.swing.JOptionPane;
 
 /**
- * Describe responsibilities here.
+ * This Basic College Class stores a course name, number and its credit value.
+ * It Implements all methods of the CollegeClass interface.
+ * It does not have prerequisites as we were told to not change this fact.
  *
- * @author      your name goes here
+ * @author      Andrew Wintermyer
  * @version     1.00
  */
-public class IntroToProgrammingCourse extends CollegeClass {
+public class IntroToProgrammingCourse implements CollegeClass {
     private String courseName;
     private String courseNumber;
-
+    private double credits;
+    
     public IntroToProgrammingCourse(String courseName, String courseNumber) {
         this.setCourseName(courseName);
         this.setCourseNumber(courseNumber);
@@ -30,6 +33,19 @@ public class IntroToProgrammingCourse extends CollegeClass {
         this.courseNumber = courseNumber;
     }
 
+    public double getCredits() {
+        return credits;
+    }
+
+    public void setCredits(double credits) {
+        if(credits < 0.5 || credits > 4.0) {
+            JOptionPane.showMessageDialog(null,
+                    "Error: credits must be in the range 0.5 to 4.0");
+            System.exit(0);
+        }
+        this.credits = credits;
+    }
+
     public String getCourseName() {
         return courseName;
     }
@@ -42,6 +58,8 @@ public class IntroToProgrammingCourse extends CollegeClass {
         }
         this.courseName = courseName;
     }
+
+
 
     
 }
