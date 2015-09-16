@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
 public abstract class AdvancedCollegeClass extends CollegeClass {
     private String prerequisites;
     
-        public void setPrerequisites(String prerequisites) {
+        public final void setPrerequisites(String prerequisites) {
         if(prerequisites == null || prerequisites.length() == 0) {
             JOptionPane.showMessageDialog(null,
                     "Error: prerequisites cannot be null of empty string");
@@ -23,7 +23,7 @@ public abstract class AdvancedCollegeClass extends CollegeClass {
         this.prerequisites = prerequisites;
         }
 
-    public String getPrerequisites() {
+    public final String getPrerequisites() {
         return prerequisites;
     }
 }
