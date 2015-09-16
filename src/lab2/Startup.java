@@ -56,6 +56,10 @@ public class Startup {
         // The Abstract class route demanded more univeriality in the ways things
         // were done but in the end was less open to change without overriding. 
         
+        // Nevermind I forgot to extend collegeClass interface to AdvancedCollegeClass.
+        
+        
+        
         
         AdvancedCollegeClass class4 = new AdvancedJavaCourse( "Advanced Java", "001001001");
         AdvancedCollegeClass class5 = new IntroJavaCourse("Intro to Java", "0000002");
