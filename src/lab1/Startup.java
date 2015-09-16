@@ -17,6 +17,9 @@ public class Startup {
     public static void main(String[] args) {
         
         CollegeClass class2 = new AdvancedJavaCourse("myclass", "thisclass");
+        CollegeClass class4 = new IntroToProgrammingCourse("this", "class");
+        
+        
         
         class2.setCourseName("Advanced Java With Jim Lombardo");
         System.out.println(class2.getCourseName());
