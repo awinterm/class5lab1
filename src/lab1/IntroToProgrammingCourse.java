@@ -6,7 +6,7 @@ import javax.swing.JOptionPane;
  * This class is responsible for getting and setting its name and number.
  * It inherits its get/set credits from the super class.
  *
- * @author      your name goes here
+ * @author      Andrew Wintermyer
  * @version     1.00
  */
 public class IntroToProgrammingCourse extends CollegeClass {

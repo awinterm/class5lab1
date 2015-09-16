@@ -1,9 +1,10 @@
 package lab1;
 
 /**
- * Describe responsibilities here.
+ * This class has its own name and number but inherits its credits and prerequisites from
+ * abstract super classes.
  *
- * @author      your name goes here
+ * @author      Andrew Wintermyer
  * @version     1.00
  */
 public class IntroJavaCourse extends AdvancedCollegeClass {
